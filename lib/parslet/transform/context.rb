@@ -11,11 +11,11 @@ require 'blankslate'
 #   end
 #
 class Parslet::Transform::Context < BlankSlate
-  reveal :methods
-  reveal :respond_to?
-  reveal :inspect
-  reveal :to_s
-  reveal :instance_variable_set
+  # reveal :methods
+  # reveal :respond_to?
+  # reveal :inspect
+  # reveal :to_s
+  # reveal :instance_variable_set
   
   def meta_def(name, &body)
     metaclass = class <<self; self; end
